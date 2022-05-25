@@ -98,10 +98,10 @@
 	.pagination>.active>a,
 	.pagination>.active>a:hover,
 	#header li.quick-cart .quick-cart-box a.btn,
-	#header li.quick-cart .quick-cart-box a.btn:hover, /* used by dark & transparent header */
+	#header li.quick-cart .quick-cart-box a.btn:hover, 
 	#topMain.nav-pills>li.active>a>span.theme-color ,
-	.ei-slider-thumbs li.ei-slider-element,			/* elastic slider active indicator */
-	.flex-control-paging li a.flex-active,				/* flex slider bullets */
+	.ei-slider-thumbs li.ei-slider-element,			
+	.flex-control-paging li a.flex-active,				
 	.tp-caption.block_theme_color,
 	.tp-bullets.simplebullets.round .bullet.selected,
 	i.ico-color,
@@ -116,10 +116,10 @@
 	.info-bar.info-bar-color,
 	.music-album-title:hover,
 	.inews-item .inews-thumbnail .inews-sticky,
-	#progressBar #bar,								/* OWL */
+	#progressBar #bar,								
 	#page-menu,
 	#page-menu ul {
-		background-color:#FAB702;
+		background-color:#62030b;
 	}
 	
 	/* !important required */
@@ -127,7 +127,7 @@
 	#music-player .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current,
 	section .theme-background,
 	.swiper-pagination-bullet-active {
-		background-color:#FAB702 !important;
+		background-color:#0838e7 !important;
 	}
 	.inews-content-inner h3>a,
 	div.side-nav ul>li:hover>a, 
@@ -148,7 +148,7 @@
 	.btn-primary:hover,
 	.btn-primary:active,
 	.btn-primary:focus {
-		border-color:#FAB702;
+		border-color:#8d030a;
 	}
 
 	.open>.dropdown-toggle.btn-primary,
@@ -159,7 +159,7 @@
 	.btn-primary:hover
 	.pagination>.active>a,
 	.pagination>.active>a:hover {
-		border-color: #FAB702;
+		border-color: #063ed8;
 	}
 
 	#topNav ul.dropdown-menu { /* submenu border top color */
