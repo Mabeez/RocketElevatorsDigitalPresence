@@ -154,7 +154,10 @@
 									Add .external for an external link!
 								-->
 								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
-									<li class="active"><!-- HOME -->
+									<li class="active">
+									    </a>
+									</li>	
+									<li><!-- HOME -->
 										<a href="#home">
 											HOME
 										</a>
@@ -232,7 +235,7 @@
 					
 						<!-- SLIDE  -->
 						<li data-transition="parallaxtobottom" data-slotamount="7" data-masterspeed="600"  data-saveperformance="off"  data-title="Slogan"
-							<!-- MAIN IMAGE -->
+							</li><!-- MAIN IMAGE -->
 							<img src="../images/security_defcon_elevator-1.webp"  alt="cover image"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
 							<div class="tp-caption font-roboto skewfromleft tp-resizeme"
@@ -328,7 +331,14 @@
 						</li>
 
 						<!-- SLIDE  -->
-						<li data-transition="parallaxtotop" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" data-title="Residential">
+						<li data-transition="parallaxtotop" 
+						    data-delay="7000" 
+						    data-slotamount="10" 
+						    data-speed="100" 
+						    data-masterspeed="300"  
+							data-saveperformance="off" 
+							data-title="Residential">
+
 							<!-- MAIN IMAGE -->
 							<img src="../images/AdobeStock_72034307.jpeg" alt="cover image"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
@@ -391,13 +401,21 @@
 								data-splitout="none"
 								data-elementdelay="0.1"
 								data-endelementdelay="0.1"
-								data-endspeed="500"
-								
+								data-endspeed="500">
 							</div>
+								
+							
 						</li>
 
                          <!-- SLIDE  -->
-                         <li data-transition="parallaxtobottom" data-slotamount="7" data-masterspeed="600"  data-saveperformance="off"  data-title="Corporate">
+                         <li data-transition="parallaxtobottom" 
+						     data-delay="7000" 
+						     data-slotamount="10" 
+						     data-speed="100" 
+						     data-masterspeed="300"  
+							 data-saveperformance="off"  
+							 data-title="Corporate">
+
 	                         <!-- MAIN IMAGE -->
 	                         <img src="../images/AdobeStock_124493370.jpeg"  alt="cover image"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
@@ -417,8 +435,8 @@
 							</div>
 
 							<div class="tp-caption content_text_center skewfromleft tp-resizeme"
-								data-x="0"
-								data-y="100" 
+								data-x="-130"
+								data-y="0" 
 								data-speed="500"
 								data-start="1500"
 								data-easing="Power3.easeInOut"
@@ -429,10 +447,9 @@
 								data-endspeed="600"
 
 								style="z-index: 3; font-size:65px; color:rgb(165, 5, 5); font-weight:bold; text-shadow:none;">
-									 We're Here For All Your <br />
-									 Elevator Solutions
+									 Your Buisness <br /> Is <br /> Our Buisiness
 									
-							</div>
+								</div>
 
 							<div class="tp-caption tp-fade"
 								data-x="left"
@@ -490,18 +507,18 @@
 				<div class="container">
                     <div class="row">
 						<div class="col-sm-3">
-							<img src="../images/award.jpg"
-							 width="350" height="250" />
+							<img src="../images/Ellies-2021.webp"
+							 width="250" height="250" />
 							 <h3 class="mt-10">Awards / Projects</h3>
 							 <p>Rocket Elevators LiftMeUp app selected as finalist for Architizer's 2021 A+Product Awards in building equipment and systems category. </p>
-							 <a href="#" class="btn btn-default">Read More</a>
+							 <a href="#" class="btn btn-default">READ MORE</a>
 						</div>
 
 						<div class="col-sm-3">
 							<img src="../images/AdobeStock_130711085.jpeg"
 							 width="250" height="250" />
 							<h3 class="mt-10">Residential Services</h3>
-							<p>We offer solutions and advice for all your residential needs.</p>
+							<p>We offer solutions and advice for all your residential needs.  <br/><br/><br/></p>
 							<a href="#" class="btn btn-default">READ MORE</a>
 						</div>
 
@@ -509,7 +526,7 @@
 							<img src="../images/AdobeStock_103570025.jpeg"
 							width="250" height="250" />
 							<h3 class="mt-10">Corporate Services</h3>
-							<p>We can also work with you for all your corporate needs.</p>
+							<p>We can also work with you for all your corporate needs. <br/><br/><br/> </p>
 							<a href="#" class="btn btn-default">READ MORE</a>
 						</div>
 
@@ -549,16 +566,7 @@
 					<div class="heading-title heading-dotted text-center">
 						<h2>What We Have Accomplished</h2>
 					</div>
-
-					<div class="text-center">
-						<ul class="nav nav-pills mix-filter mb-60">
-							<li data-filter="all" class="filter active"><a href="#">All</a></li>
-							<li data-filter="development" class="filter"><a href="#">Development</a></li>
-							<li data-filter="photography" class="filter"><a href="#">Photography</a></li>
-							<li data-filter="design" class="filter"><a href="#">Design</a></li>
-						</ul>
-					</div>
-
+										
 				</div>
 
 				<div id="portfolio" class="portfolio-nogutter">
@@ -574,19 +582,19 @@
 											<span class="inner">
 
 												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="demo_files/images/thematics/construction/w1-min.jpg" data-plugin-options='{"type":"image"}'>
+												<a class="ico-rounded lightbox" href="../images/The-Ellies-2022.svg" data-plugin-options='{"type":"image"}'>
 													<span class="fa fa-plus fs-20"></span>
 												</a>
 
 												<!-- details -->
-												<a class="ico-rounded lightbox" href="ajax/portfolio-detail-modal-6.html" data-plugin-options='{"type":"ajax", "closeOnBgClick":false}'>
+												<a class="ico-rounded lightbox" href="../images/award.jpg" data-plugin-options='{"type":"ajax", "closeOnBgClick":false}'>
 													<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
 												</a>
 
 											</span>
 										</span>
 
-										<img class="img-fluid" src="demo_files/images/thematics/construction/w1-min.jpg" width="600" height="399" alt="">
+										<img class="img src=../images" width="600" height="399" alt="">
 									</figure>
 
 									<div class="item-box-desc">
