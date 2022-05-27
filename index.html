@@ -297,12 +297,12 @@
 						    data-speed="100" 
 						    data-masterspeed="300"  
 							data-saveperformance="off" 
-							data-title="Residential">
+							data-title="Residential Buildings">
 
 							<!-- MAIN IMAGE -->
 							<img src="../images/AdobeStock_72034307.jpeg" alt="cover image"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
-							<div class="overlay dark-4"><!-- dark overlay [0 to 9 opacity] --></div>
+							<div class="overlay dark-7"><!-- dark overlay [0 to 9 opacity] --></div>
 
 							<div class="tp-caption font-roboto skewfromleft tp-resizeme"
 								data-x="0"
@@ -374,11 +374,12 @@
 						     data-speed="100" 
 						     data-masterspeed="300"  
 							 data-saveperformance="off"  
-							 data-title="Corporate">
+							 data-title="Corporate Buildings">
 
 	                         <!-- MAIN IMAGE -->
 	                         <img src="../images/AdobeStock_124493370.jpeg"  alt="cover image"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-
+							 
+							 <div class="overlay dark-7">
 	                         <div class="tp-caption white_big skewfromleft tp-resizeme"
 		                        data-x="471"
 								data-y="100" 
@@ -1170,7 +1171,7 @@
 						<!-- FORM -->
 						<div class="col-md-8 col-sm-8">
 
-							<h3>Drop us a line or just say <strong><em>Hello!</em></strong></h3>
+							<h3>Send us your questions and comments</em></strong></h3>
 
 							
 							<!--
@@ -1302,8 +1303,8 @@
 								h-550
 								h-600
 							-->
-							<div id="map2" class="h-400 grayscale"></div>
-
+							<div id="maps" class="h-400 grayscale"></div>
+							
 							<hr />
 
 							<p>
@@ -1374,16 +1375,17 @@
 			GMAP.JS 
 			https://goo.gl/maps/zqiihDQD4qRS1QpQ9
 		-->
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2729.40787605861!2d-71.29402718445341!3d46.835660079141135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb897d0e1cafe3f%3A0x9863b2d992c71670!2sCodeBoxx!5e0!3m2!1sen!2sca!4v1653598396519!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-		<script>
-
+		<div id="contentframe" style="position:relative; top: -850px; left: 970px;">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2729.407876058604!2d-71.29402718445341!3d46.835660079141135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb897d0e1cafe3f%3A0x9863b2d992c71670!2sCodeBoxx!5e0!3m2!1sen!2sca!4v1653656860116!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+	    <script>
+	
 			jQuery(document).ready(function(){
 
 				/**
 					@BASIC GOOGLE MAP
 				**/
 				var map2 = new GMaps({
-					div: '#map2',
+					div: '#maps',
 					lat: -12.043333,
 					lng: -77.028333,
 					scrollwheel: false
@@ -1396,7 +1398,7 @@
 				});
 
 			});
-
+		
 		</script>
 	</body>
 </html>
