@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>Rocket Elevators Quote Page</title>
+		<title>Rocket Elevators Residential Page</title>
 		<meta name="description" content="" />
 		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
 
@@ -27,6 +27,8 @@
 		<!-- PAGE LEVEL SCRIPTS -->
 		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
 		<link href="../HTML_BS4/assets/css/color_scheme/red.css" rel="stylesheet" type="text/css" id="color_scheme" />
+		<link rel="stylesheet" href="/css/quote.css">
+		<script src="javascript/quote.js"></script>
 	</head>
 	<a id="topMain" href="#top"> </a>
 	<!--
@@ -51,8 +53,9 @@
 		data-background="assets/images/_smarty/boxed_background/1.jpg"
 	-->
 	<body class="smoothscroll enable-animation">
-	
-			<!-- wrapper -->
+
+		
+		<!-- wrapper -->
 		<div id="wrapper">
 
 			<!-- 
@@ -82,7 +85,7 @@
 				Example Usage:  class="clearfix sticky header-sm transparent b-0"
 			-->
 			<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
-
+				
 				<!-- TOP NAV -->
 				<header id="topNav">
 					<div class="container">
@@ -156,232 +159,53 @@
 				<!-- /Top Nav -->
 
 			</div>
-
+			
 			<hr class="m-0" /><!-- 1px line separator -->
 
-			<!-- Heading -->
-			<section class="heading-title heading-arrow-bottom">
-				<div class="container">
+			<script type="application/javascript"></script>
 			
-					<div class="text-center">
-						<h1 style="color:rgb(78, 114, 145);"><span style="color:rgb(78, 114, 145)">Quote </span> <span style="color: rgb(165, 5, 5) ">Page </span></h1>
-			
-		<div class="divider divider-dotted"><!-- divider --></div>	
-
+						
 			<!-- Services -->
-			<div class="masonry-gallery columns-3 clearfix lightbox" data-img-big="2" data-plugin-options='{"delegate": "a", "gallery": {"enabled": true}}'>
-
-				<a class="image-hover" href="/images/AdobeStock_53477661.jpeg">
-					<img src="/images/AdobeStock_53477661.jpeg" alt="...">
-				</a>
-			
-				<a class="image-hover" href="/images/AdobeStock_146216308.jpeg">
-					<img src="/images/AdobeStock_146216308.jpeg" alt="...">
-				</a>
-			
-				<a class="image-hover" href="/images/AdobeStock_179073967.jpeg">
-					<img src="/images/AdobeStock_179073967.jpeg" alt="...">
-				
-			
-				<a class="image-hover" href="/images/Matching_Elevators_to_Buildings_Social_Media.jpg">
-					<img src="/images/Matching_Elevators_to_Buildings_Social_Media.jpg" alt="...">
-				
-			
-				<a class="image-hover" href="/images/AdobeStock_78149317.jpeg">
-					<img src="/images/AdobeStock_78149317.jpeg" alt="...">
-				</a>
-			
-				<a class="image-hover" href="/images/AdobeStock_66781279.jpeg">
-					<img src="/images/AdobeStock_66781279.jpeg" alt="...">
-				</a>
+			<div>
+				<label>
+				  <input type="radio" name="colorRadio" value="residential">residential
+				</label>
+				<label>
+				  <input type="radio" name="colorRadio" value="commercial">commercial
+				</label>
+				<label>
+				  <input type="radio" name="colorRadio" value="corporate">corporate
+				</label>
+				<label>
+				  <input type="radio" name="colorRadio" value="hybrid">hybrid
+				</label><br><br>
+			</div>
+			<div id="residential-apartments">
+			  Number of Apartments
+				  <input type="text" id="residential-number-of-apartments"><br><br>
+			  Number of Floors
+				  <input type="text" id="residential-number-of-floors"><br><br>
+			  Number Of Basements
+				  <input type="text" id="residential-number-of-basements">
+			 
+			</div>
+			<div id="commercial-apartments">Question commercial</div>
+			<div id="corporate-apartments">Question corporate</div>
+			<div id="hybrid-apartments">Question hybrid</div> 
 					
-			</div>
-			<div class="columnize-1">
-				<p>Rocket Elevators offers the best solutions to manage vertical transportation in elevators in high rise buildings. High rise buildings are classified as buildings with more than 12 floors, and can require custom designs for managing car arrangements with single, double, and super double deck solutions as well as lobby arrangements. In addition, elevator planning for high rise buildings with Rocket Elevators includes performance equipment design for high speed, as well as counting in factors like performance, quality and high traffic.</p>
-			</div>
+			
+			    
+
+
+
 			<!-- /Services -->
 
-			<div class="divider divider-dotted"><!-- divider --></div>	
 			
 			
-			<!-- CONTACT -->
-			<section id="contact">
-				<div class="container">
-
-					<header class="text-center mb-60">
-						<h2>Contact Us</h2>
-						<p class="lead font-lato">Questions, Comments</p>
-						<hr />
-					</header>
-
-
-					<div class="row">
-
-						<!-- FORM -->
-						<div class="col-md-8 col-sm-8">
-
-							<h3>Send us your questions and comments</em></strong></h3>
-
-							
-							<!--
-								MESSAGES
-								
-									How it works?
-									The form data is posted to php/contact.php where the fields are verified!
-									php.contact.php will redirect back here and will add a hash to the end of the URL:
-										#alert_success 		= email sent
-										#alert_failed		= email not sent - internal server error (404 error or SMTP problem)
-										#alert_mandatory	= email not sent - required fields empty
-										Hashes are handled by assets/js/contact.js
-
-									Form data: required to be an array. Example:
-										contact[email][required]  WHERE: [email] = field name, [required] = only if this field is required (PHP will check this)
-										Also, add `required` to input fields if is a mandatory field. 
-										Example: <input required type="email" value="" class="form-control" name="contact[email][required]">
-
-									PLEASE NOTE: IF YOU WANT TO ADD OR REMOVE FIELDS (EXCEPT CAPTCHA), JUST EDIT THE HTML CODE, NO NEED TO EDIT php/contact.php or javascript
-												 ALL FIELDS ARE DETECTED DINAMICALY BY THE PHP
-
-									WARNING! Do not change the `email` and `name`!
-												contact[name][required] 	- should stay as it is because PHP is using it for AddReplyTo (phpmailer)
-												contact[email][required] 	- should stay as it is because PHP is using it for AddReplyTo (phpmailer)
-							-->
-
-							<!-- Alert Success -->
-							<div id="alert_success" class="alert alert-success mb-30">
-								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-								<strong>Thank You!</strong> Your message successfully sent!
-							</div><!-- /Alert Success -->
-
-
-							<!-- Alert Failed -->
-							<div id="alert_failed" class="alert alert-danger mb-30">
-								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-								<strong>[SMTP] Error!</strong> Internal server error!
-							</div><!-- /Alert Failed -->
-
-
-							<!-- Alert Mandatory -->
-							<div id="alert_mandatory" class="alert alert-danger mb-30">
-								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-								<strong>Sorry!</strong> You need to complete all mandatory (*) fields!
-							</div><!-- /Alert Mandatory -->
-
-
-							<form action="php/contact.php" method="post" enctype="multipart/form-data">
-								<fieldset>
-									<input type="hidden" name="action" value="contact_send" />
-
-									<div class="row">
-										<div class="col-md-4">
-											<label for="contact:name">Full Name *</label>
-											<input required type="text" value="" class="form-control" name="contact[name][required]" id="contact:name">
-										</div>
-										<div class="col-md-4">
-											<label for="contact:email">E-mail Address *</label>
-											<input required type="email" value="" class="form-control" name="contact[email][required]" id="contact:email">
-										</div>
-										<div class="col-md-4">
-											<label for="contact:phone">Phone *</label>
-											<input required type="phone" value="" class="form-control" name="contact[phone][required]" id="contact:phone">
-										</div>	
-								</div>
-								<div class="row">		
-										<div class="col-md-4">
-											<label for="contact:company_name">Company Name *</label>
-											<input required type="company_name" value="" class="form-control" name="contact[company_name][required]" id="contact:company_name">
-										</div>
-										<div class="col-md-4">
-											<label for="contact:project_name">Project Name *</label>
-											<input required type="project_name" value="" class="form-control" name="contact[project_name][required]" id="contact:project_name">
-										</div>
-										<div class="col-md-4">
-											<label for="contact:project_description">Project Description *</label>
-											<input required type="project_description" value="" class="form-control" name="contact[project_description][required]" id="contact:project_description">
-										</div>
-										    <div class="col-md-4">
-									            <label for="contact_department">Department</label>
-									            <select class="form-control pointer" name="contact[department]">
-										           <option value="">--- Select ---</option>
-										           <option value="Sales">Sales</option>
-										           <option value="Commercial">Commercial</option>
-										           <option value="Support">Support</option>
-									            </select>
-								        	</div>
-								    </div>
-									<div class="row">
-										<div class="col-md-12">
-											<label for="contact:message">Message *</label>
-											<textarea required maxlength="10000" rows="8" class="form-control" name="contact[message]" id="contact:message"></textarea>
-										</div>
-								    </div>
-									<div class="row">
-										<div class="col-md-12">
-											<label for="contact:attachment">Attachment</label>
-
-											<!-- custom file upload -->
-											<input class="custom-file-upload" type="file" id="file" name="contact[attachment]" id="contact:attachment" data-btn-text="Select a File" />
-											<small class="text-muted block">Max file size: 10Mb (zip/pdf/jpg/png)</small>
-
-										</div>
-									</div>
-
-								</fieldset>
-
-								<div class="row">
-									<div class="col-md-12">
-									 <form>
-										<button type="button" class="btn btn-danger dark"><i class="fa fa-check"></i> SEND MESSAGE
-								     </form>
-									</div>
-								</div>
-							</form>
-
-						</div>
-						<!-- /FORM -->
-
-
-						<!-- INFO -->
-						<div class="col-md-4 col-sm-1">
-
-							<h2>Visit Us</h2>
-
-							<!-- 
-							Available heights
-								h-100
-								h-150
-								h-200
-								h-250
-								h-300
-								h-350
-								h-400
-								h-450
-								h-500
-								h-550
-								h-600
-							-->
-					    <div>
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2729.407876058604!2d-71.29402718445341!3d46.835660079141135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb897d0e1cafe3f%3A0x9863b2d992c71670!2sCodeBoxx!5e0!3m2!1sen!2sca!4v1653656860116!5m2!1sen!2sca" width="300" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-														
-							<hr />
-							<p>
-								<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> 1165 Bd Lebourgneuf Suite 300, Quebec, Canada</span>
-								<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:(418)555-1234"></a>(418)555-1234</span>
-								<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="info@codeboxx.biz">info@codeboxx.biz</a></span>
-    							</p>
-                        </div>
-						</div>
-						<!-- /INFO -->
-
-					</div>
-
-				</div>
-			</section>
-			<!-- /CONTACT -->
 
 
 
-
+			<!-- FOOTER -->
 			<footer id="footer">
 				<div class="container">
 
@@ -391,7 +215,7 @@
 						<!-- col #1 -->
 						<div class="col-md-8">
 
-							<h3 class="letter-spacing-1">WHY US?</h3>
+							<h3 class="letter-spacing-1">WHYt  US?</h3>
 
 							<!-- Small Description -->
 							<p>
