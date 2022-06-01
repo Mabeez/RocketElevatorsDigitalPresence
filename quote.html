@@ -5,7 +5,8 @@
 		<title>Rocket Elevators Residential Page</title>
 		<meta name="description" content="" />
 		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
-
+	
+	<link rel="stylesheet" href="/css/quote.css">
 		<!-- mobile settings -->
 		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
 		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
@@ -54,7 +55,6 @@
 	-->
 	<body class="smoothscroll enable-animation">
 
-		
 		<!-- wrapper -->
 		<div id="wrapper">
 
@@ -162,43 +162,83 @@
 			
 			<hr class="m-0" /><!-- 1px line separator -->
 
-			<script type="application/javascript"></script>
 			
-						
-			<!-- Services -->
-			<div>
-				<label>
-				  <input type="radio" name="colorRadio" value="residential">residential
-				</label>
-				<label>
-				  <input type="radio" name="colorRadio" value="commercial">commercial
-				</label>
-				<label>
-				  <input type="radio" name="colorRadio" value="corporate">corporate
-				</label>
-				<label>
-				  <input type="radio" name="colorRadio" value="hybrid">hybrid
-				</label><br><br>
-			</div>
-			<div id="residential-apartments">
-			  Number of Apartments
-				  <input type="text" id="residential-number-of-apartments"><br><br>
-			  Number of Floors
-				  <input type="text" id="residential-number-of-floors"><br><br>
-			  Number Of Basements
-				  <input type="text" id="residential-number-of-basements">
-			 
-			</div>
-			<div id="commercial-apartments">Question commercial</div>
-			<div id="corporate-apartments">Question corporate</div>
-			<div id="hybrid-apartments">Question hybrid</div> 
+			
+		<!-- Services -->
+				<section>		
+					<h2>Select Building Type</h2>
+					<div>
+						<label>
+						<input type="radio" name="colorRadio" value="residential">Residential
+						</label>
+						<label>
+						<input type="radio" name="colorRadio" value="commercial">Commercial
+						</label>
+						<label>
+						<input type="radio" name="colorRadio" value="corporate">Corporate
+						</label>
+						<label>
+						<input type="radio" name="colorRadio" value="hybrid">Hybrid
+						</label><br><br>
+					</div>
 					
+					<div id="residential-apartments">
+					Number of Apartments
+						<input type="text" id="residential-number-of-apartments"><br><br>
+					Number of Floors
+						<input type="text" id="residential-number-of-floors"><br><br>
+					Number of Basements
+						<input type="text" id="residential-number-of-basements">
+					</div>
+					
+					
+					<div id="commercial-apartments">
+					Number of Floors
+						<input type="text" id="commercial-number-of-floors"><br><br>
+					Number of Basements     
+						<input type="text" id="commercial-number-of-basements"><br><br>
+					Number of Companies
+						<input type="text" id="commercial-number-of-companies"><br><br>
+					Number of Parking Spots
+						<input type="text" id="number-of-parking-spots"><br><br>
+					Number of Elevators
+						<input type="text" id="number-of-elevators"><br><br>
+					</div>
+					
+						
+					<div id="corporate-apartments">
+					Number of Floors
+						<input type="text" id="corporate-number-of-floors"><br><br>
+					Number of Basements     
+						<input type="text" id="corporate-number-of-basements"><br><br>
+					Number of Parking Spots
+						<input type="text" id="corporate-number-of-parking-spots"><br><br>
+					Number of Corporations
+						<input type="text" id="number-of-corporations"><br><br>
+					Maximum Occupancy
+						<input type="text" id="maximum-occupancy"><br><br>
+					</div>
+					
+					<div id="hybrid-apartments">
+					Number of Floors
+						<input type="text" id="hybrid-number-of-floors"><br><br>
+					Number of Basements
+						<input type="text" id="hybrid-number-of-basements"><br><br>
+					Number of Companies
+						<input type="text" id="hybrid-number-of-companies"><br><br>
+					Number of Parking Spots
+						<input type="text" id="hybrid-number-of-parking-spots"><br><br>
+					Maximum Occupancy
+						<input type="text" id="hybrid-maximum-occupancy"><br><br>   
+					
+					</div>
+		
 			
 			    
 
 
-
-			<!-- /Services -->
+        </section>	
+			
 
 			
 			
@@ -313,5 +353,6 @@
 			});
 		
 		</script>
+	<script src="./assets/javascript/quote.js"></script>
 	</body>
 </html>
