@@ -6,7 +6,7 @@
 		<meta name="description" content="" />
 		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
 	
-	<link rel="stylesheet" href="/css/quote.css">
+	
 		<!-- mobile settings -->
 		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
 		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
@@ -28,8 +28,8 @@
 		<!-- PAGE LEVEL SCRIPTS -->
 		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
 		<link href="../HTML_BS4/assets/css/color_scheme/red.css" rel="stylesheet" type="text/css" id="color_scheme" />
-		<link rel="stylesheet" href="/css/quote.css">
-		<script src="javascript/quote.js"></script>
+		<link rel="stylesheet" href="assets/css/quote.css">
+		
 	</head>
 	<a id="topMain" href="#top"> </a>
 	<!--
@@ -183,52 +183,52 @@
 					</div>
 					
 					<div id="residential-apartments">
-					Number of Apartments
-						<input type="text" id="residential-number-of-apartments"><br><br>
-					Number of Floors
-						<input type="text" id="residential-number-of-floors"><br><br>
-					Number of Basements
-						<input type="text" id="residential-number-of-basements">
+						<label>Number of Apartments</label>
+						<input type="number" id="residential-number-of-apartments" min="0"><br><br>
+						<label>Number of Floors</label>
+						<input type="number" id="residential-number-of-floors"><br><br>
+						<label>Number of Basements</label>
+						<input type="number" id="residential-number-of-basements">
 					</div>
 					
 					
 					<div id="commercial-apartments">
-					Number of Floors
+					<label>Number of Floors</label>
 						<input type="text" id="commercial-number-of-floors"><br><br>
-					Number of Basements     
+						<label>Number of Basements</label>    
 						<input type="text" id="commercial-number-of-basements"><br><br>
-					Number of Companies
+					    <label>Number of Companies</label>
 						<input type="text" id="commercial-number-of-companies"><br><br>
-					Number of Parking Spots
+						<label>Number of Pa>rking Spots</label>
 						<input type="text" id="number-of-parking-spots"><br><br>
-					Number of Elevators
+						<label>Number of Elevators</label>
 						<input type="text" id="number-of-elevators"><br><br>
 					</div>
 					
 						
 					<div id="corporate-apartments">
-					Number of Floors
+					<label>Number of Floors</label>
 						<input type="text" id="corporate-number-of-floors"><br><br>
-					Number of Basements     
+						<label>Number of Basements</label>     
 						<input type="text" id="corporate-number-of-basements"><br><br>
-					Number of Parking Spots
+						<label>Number of Parking Spots</label>
 						<input type="text" id="corporate-number-of-parking-spots"><br><br>
-					Number of Corporations
+						<label>Number of Corporations</label>
 						<input type="text" id="number-of-corporations"><br><br>
-					Maximum Occupancy
+						<label>Maximum Occupancy</label>
 						<input type="text" id="maximum-occupancy"><br><br>
 					</div>
 					
 					<div id="hybrid-apartments">
-					Number of Floors
+						<label>Number of Floors</label>
 						<input type="text" id="hybrid-number-of-floors"><br><br>
-					Number of Basements
+						<label>Number of Basements</label>
 						<input type="text" id="hybrid-number-of-basements"><br><br>
-					Number of Companies
+						<label>Number of Companies</label>
 						<input type="text" id="hybrid-number-of-companies"><br><br>
-					Number of Parking Spots
+						<label>Number of Parking Spots</label>
 						<input type="text" id="hybrid-number-of-parking-spots"><br><br>
-					Maximum Occupancy
+						<label>Maximum Occupancy</label>
 						<input type="text" id="hybrid-maximum-occupancy"><br><br>   
 					
 					</div>
@@ -315,7 +315,7 @@
 		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
 
 		<script src="assets/js/scripts.js"></script>
-		
+		<script src="assets/js/quote.js"></script>
 		
 		<!-- REVOLUTION SLIDER -->
 		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
@@ -332,27 +332,9 @@
 		
 	    <script>
 	
-			jQuery(document).ready(function(){
-
-				/**
-					@BASIC GOOGLE MAP
-				**/
-				var map2 = new GMaps({
-					div: '#maps',
-					lat: -12.043333,
-					lng: -77.028333,
-					scrollwheel: false
-				});
-
-				var marker = map2.addMarker({
-					lat: -12.043333,
-					lng: -77.028333,
-					title: 'Company, Inc.'
-				});
-
-			});
+	
 		
 		</script>
-	<script src="./assets/javascript/quote.js"></script>
+	
 	</body>
 </html>
