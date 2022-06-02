@@ -130,6 +130,23 @@ $(document).ready(function () {
     });
 });
 
-function numberOfElevators(numberOfApartments, numberOfFloors) {
-    return;
-}
+$("#residential-number-of-apartments").on("keyup", function () {
+    console.log("first");
+
+    var nbofapartments = $("#residential-number-of-apartments").val();
+    console.log("nbofapartments");
+});
+
+$("#residential-number-of-floors").on("keyup", function () {
+    console.log("second");
+
+    var numberoffloors = $("#residential-number-of-floors").val();
+    console.log("nbofapartments");
+});
+
+$("#residential-number-of-basements").on("keyup", function () {
+    console.log("third");
+
+    var numberofbasements = $("#residential-number-of-basements").val();
+    console.log("nbofbasements");
+});
